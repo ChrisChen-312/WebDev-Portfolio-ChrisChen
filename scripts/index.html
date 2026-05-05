@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Chen - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+        .btn {
+            padding: 8px 16px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chris Chen</h1>
+    <p>Student Portfolio</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#global-goals">Global Goals</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a student learning web development and digital design. This portfolio shows my skills and class projects.</p>
+        <button class="btn" onclick="showMessage()">Introduction</button>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul style="margin-left: 20px;">
+            <li>Colored Pencil Drawing</li>
+            <li>3D Modeling</li>
+            <li>Texture Painting</li>
+            <li>UV Unwrapping</li>
+            <li>Basic Unity Game Engine</li>
+            <li>HTML & CSS</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>- Ocean Community Website</p>
+        <p>- 3D Models with UV and Textures</p>
+        <p>- Basic Interactive Web Pages</p>
+        <p>- Colored Pencil Artwork</p>
+    </section>
+
+
+    <section id="accessibility">
+        <h2>Accessibility</h2>
+        <p>This website uses clear structure, readable fonts, and simple navigation.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Chris Chen</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("My name is Chris Chen. I am a student.");
+    }
+</script>
+
+</body>
+</html>
