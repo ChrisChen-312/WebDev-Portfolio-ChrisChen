@@ -4,98 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Chen - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        /* 深色渐变背景 */
-        body {
-            background: linear-gradient(135deg, #1f2937, #37474f);
-            color: #eee;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        /* 浅色模式 */
-        body.light-mode {
-            background: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            background-color: rgba(44, 62, 80, 0.9);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: rgba(255,255,255,0.08);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-        }
-
-        body.light-mode section {
-            background: white;
-            color: #333;
-        }
-
-        h2 {
-            color: #ffffff;
-            margin-bottom: 12px;
-            font-size: 18px;
-        }
-
-        body.light-mode h2 {
-            color: #2c3e50;
-        }
-
-        .btn {
-            padding: 8px 16px;
-            background-color: #455a64;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: rgba(44, 62, 80, 0.9);
-            color: white;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
+    <img src="images/picture.jpg" alt="Chris Chen Avatar" class="avatar">
     <h1>Chris Chen</h1>
     <p>Student Portfolio</p>
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#global-goals">Global Goals</a>
+        <a href="#behind-the-curtain">Behind the Curtain</a>
     </nav>
 </header>
 
@@ -112,8 +34,14 @@
         <h2>Skills</h2>
         <ul style="margin-left: 20px;">
             <li>Colored Pencil Drawing</li>
+            <img src="images/colored-pencil.jpg" alt="Colored Pencil Drawing" class="skill-img">
+
             <li>3D Modeling</li>
+            <img src="images/3d-model.jpg" alt="3D Modeling" class="skill-img">
+
             <li>Texture Painting</li>
+            <img src="images/texture-paint.jpg" alt="Texture Painting" class="skill-img">
+
             <li>UV Unwrapping</li>
             <li>Basic Unity Game Engine</li>
             <li>HTML & CSS</li>
@@ -126,6 +54,39 @@
         <p>- 3D Models with UV and Textures</p>
         <p>- Basic Interactive Web Pages</p>
         <p>- Colored Pencil Artwork</p>
+    </section>
+
+    <section id="global-goals">
+        <h2>UN Global Goals</h2>
+        <p><strong>Goal 9: Industry, Innovation and Infrastructure</strong></p>
+        <p>I am interested in this goal because my work in 3D modeling, game design, and web development is all about using technology to build new creative tools and experiences. Learning these skills helps me understand how digital innovation works, and how it can be used to create better, more accessible infrastructure for creative communities.</p>
+    </section>
+
+    <section id="behind-the-curtain">
+        <h2>Behind the Curtain</h2>
+        <p>This website was built using HTML, external CSS, and external JavaScript. I used VS Code as my editor and Live Server to preview changes in real time.</p>
+        <br>
+
+        <p><strong>HTML Structure:</strong></p>
+        <img src="images/code-html.png" alt="HTML Code Screenshot" class="skill-img">
+
+        <p><strong>CSS Styling:</strong></p>
+        <img src="images/code-css.png" alt="CSS Code Screenshot" class="skill-img">
+
+        <p><strong>JavaScript Interactivity:</strong></p>
+        <img src="images/code-java.png" alt="JavaScript Code Screenshot" class="skill-img">
+
+        <br>
+        <p><strong>Challenging parts:</strong></p>
+        <ul style="margin-left: 20px;">
+            <li>Getting the file paths right, especially with the `images` and `Javascripts` folders, took some troubleshooting.</li>
+            <li>Making the dark/light mode toggle work smoothly required understanding how CSS classes and JavaScript interact.</li>
+            <li>Making sure the images displayed correctly across different screen sizes was a learning process.</li>
+        </ul>
+        <br>
+        <p><strong>Developer tools:</strong> I used browser developer tools (Inspect Element) to test different CSS styles, check for errors in the console, and debug image loading issues.</p>
+        <br>
+        <p><strong>What I learned:</strong> I learned how to structure a complete website project, use external style and script files for organization, and solve problems by testing and debugging. I also learned how to add simple interactivity with JavaScript.</p>
     </section>
 
     <section id="accessibility">
